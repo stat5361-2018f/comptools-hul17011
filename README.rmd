@@ -1,6 +1,7 @@
 Problems met in this assignment:
 
 First one:
+
 Some missing packages: devtools, dplyr, readr, sessioninfo, lobstr, testthat, pryr, DBI, RSQLite, zeallot, microbenchmark, dbplyr, lineprof,
 Usually we can use install.package to install some packages, however, in some cases we need to use devtools instead.
 
