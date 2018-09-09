@@ -1,16 +1,18 @@
 Problems met in this assignment:
 
-First one:
+First problem:
 
 Some missing packages: devtools, dplyr, readr, sessioninfo, lobstr, testthat, pryr, DBI, RSQLite, zeallot, microbenchmark, dbplyr, lineprof,
 Usually we can use install.package to install some packages, however, in some cases we need to use devtools instead.
 
 
-Second one
+Second problem:
+
 X11 library is missing in this mac, so we need to install XQuartz from xquartz.macosforge.org
 
 
-Third one
+Third problem:
+
 Subscript out of bounds,
 conditions.rmd line 368
 ```{r}
@@ -19,16 +21,19 @@ str(cnd)
 ```
 
 
-Fourth one
+Fourth problem:
+
 pandoc: unrecognized option `--lua-filter=latex/sidebar.lua'
 update the pandoc package to the latest version
 
 
-Fifth one
+Fifth problem:
+
 Failed to compile _main.tex No tex installation detected
 So we need to install a tex vision install.github("yihui/tinytex"), during this process, I find /usr/local/bin not writable, fix it by try ~/Library/TinyTeX/bin/x86_64-darwin/tlmgr path add in the terminal
 
 
-Sixth
+Sixth problem:
+
 missing he font "Inconsolata" cannot be found.
 install it
