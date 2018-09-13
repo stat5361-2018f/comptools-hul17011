@@ -1,39 +1,46 @@
-# Problems met in this assignment:
+---
+title: "Problems met in this assignment"
+author: "Hukai Luo"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+---
 
-First problem:
+# First problem:
 
-Some missing packages: devtools, dplyr, readr, sessioninfo, lobstr, testthat, pryr, DBI, RSQLite, zeallot, microbenchmark, dbplyr, lineprof,
+Some missing packages: devtools, dplyr, readr, sessioninfo, lobstr, testthat, pryr, DBI, RSQLite, zeallot, microbenchmark, dbplyr, lineprof
+
 Usually we can use install.package to install some packages, however, in some cases we need to use devtools instead.
 
 
-Second problem:
+# Second problem:
 
 X11 library is missing in this mac, so we need to install XQuartz from xquartz.macosforge.org
 
 
-Third problem:
+# Third problem:
 
-Subscript out of bounds,
-conditions.rmd line 368
+Subscript out of bounds,conditions.rmd line 368
 ```{r}
 cnd <- catch_cnd(abort("An error"))
 str(cnd)
 ```
 
 
-Fourth problem:
+# Fourth problem:
 
 pandoc: unrecognized option `--lua-filter=latex/sidebar.lua'
+
 update the pandoc package to the latest version
 
 
-Fifth problem:
+#Fifth problem:
 
 Failed to compile _main.tex No tex installation detected
+
 So we need to install a tex vision install.github("yihui/tinytex"), during this process, I find /usr/local/bin not writable, fix it by try ~/Library/TinyTeX/bin/x86_64-darwin/tlmgr path add in the terminal
 
 
-Sixth problem:
+#Sixth problem:
 
 missing he font "Inconsolata" cannot be found.
+
 install it
